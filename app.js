@@ -34,6 +34,6 @@ app.get('*', (req, res) => {
 	res.render('error')
 })
 
-app.listen(3000, function(){
-    console.log('Movie has started')
-})
+app.listen(process.env.PORT || 3000, function(){
+    console.log('app running at port 3000...');
+   });
