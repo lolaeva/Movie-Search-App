@@ -1,0 +1,27 @@
+<div class="container">
+<%- include("partials/header") %>
+
+<div class="container mt-5">
+    <a href="/"><button class="btn">Back</button></a>
+    <h1 class="text-center my-5">Results </h1>
+    <ul>
+    <div class="row">
+        <% data['Search'].forEach(function(movie){ %>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <a href="https://www.imdb.com/title/<%= movie['imdbID'] %>">
+                    <li>
+                        <img src="<%= movie['Poster'] %>" title="Go to '<%= movie.Title %>' IMDb page" class="mb-2">
+                        <p class="title"><%= movie['Title']; %></p>
+                        <p><%= movie['Year']; %></p>
+                    </li>
+                </a>
+            </div>    
+        <% }); %>
+    </div>
+    </ul>
+ 
+</div>
+
+
+<%- include("partials/footer") %>
+</div>

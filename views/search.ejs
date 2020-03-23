@@ -1,0 +1,11 @@
+<%- include("partials/header") %>
+
+<div class="container">
+    <h1 class="text-center my-5">Search for a movie</h1>
+        <form class="my-5 form-inline justify-content-center" action="/results" method="GET">
+            <input type="text" class="form-control" name="search" placeholder="Enter keyword or title">
+            <button type="submit" class="btn btn-default">Search</button>
+        </form>    
+</div>
+
+<%- include("partials/footer") %>
