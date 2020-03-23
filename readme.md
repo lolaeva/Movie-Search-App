@@ -1,5 +1,5 @@
 Movie Search App based on APIs from OMDb API. 
-Page deployed on Heroku. Click here to see <a href="https://movie-app-lola.herokuapp.com/">it</a>
+Page deployed on Heroku. Click <a href="https://movie-app-lola.herokuapp.com/">here</a> to see it. 
 
 
 1. Route /. Sticking request inside it. Once request is done, then we're rendering a template. The important part is JSON.parse(body) - turn string into JS object.
